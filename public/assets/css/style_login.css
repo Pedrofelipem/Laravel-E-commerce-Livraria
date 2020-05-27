@@ -1,0 +1,154 @@
+*{ 
+    margin:0;
+    padding:0;
+    font-family: Arial, sans-serif;
+}
+.Conteiner{
+    width: 500px;
+    min-height: 300px;    
+    margin: 0px auto;   
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 3px;
+    margin-top: 5%;
+    max-width: 80%;
+}
+.alerta{
+  padding: 30px;
+  border-radius: 5px;
+	color: #B22222;	
+	background-color:#87CEFA;
+  position: relative;
+  font-size: 20px;
+  width: 460px;
+  top: 60px;
+  margin: auto;
+}
+a{
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  color: #353535;
+}
+a:hover{
+  text-decoration: underline;
+  color: blue;
+
+}
+h1{
+    font-size: 48px;
+    color:black;
+    padding: 2px 0 10px 0;
+    font-family: Arial,sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+}
+h1:after{
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 10px;
+    background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgb(147, 148, 189) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%);  
+}
+p{
+    margin-bottom: 15px;
+} 
+label{
+    color: #405c60;
+    position: relative;
+  }
+ 
+input:-moz-placeholder,
+textarea:-moz-placeholder{
+    color: #bebcbc;
+    font-style: italic;
+}
+input {
+    outline: none;
+  }
+   
+  /*Estilo dos input*/
+input:not([type="checkbox"]){
+    width: 95%;
+    margin-top: 4px;
+    padding: 10px;    
+    border: 1px solid #b2b2b2;
+   
+    border-radius: 3px;
+    border-radius: 3px;
+   
+    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+   
+    transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+   
+  /*Estilo do botão submit */
+input[type="submit"]{
+    width: 100%!important;
+    cursor: pointer;  
+    background: rgb(61, 157, 179);
+    padding: 8px 5px;
+    color: #fff;
+    font-size: 20px;  
+    border: 1px solid #fff;   
+    margin-bottom: 10px;  
+    text-shadow: 0 1px 1px #333;
+   
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+   
+    transition: all 0.2s linear;
+  }
+   
+  /*estilo do botão submit no hover */
+input[type="submit"]:hover{
+    background: #4ab3c6;
+  }
+
+.btn-cadastro{
+    margin: auto;
+    background: #e1eaeb;
+    color: #7f7c7c;
+    height: 20px;
+    width: 440px;
+    max-width: 80%;
+    padding: 17px 30px 20px 30px;
+    font-size: 16px;
+    text-align: right;
+    border-top: 1px solid #dbe5e8;
+    border-radius: 0 0  5px 5px;
+
+  }
+@media screen and (max-width: 415px) {
+    .btn-cadastro{
+        font-size: 11px;
+    }
+}
+.btn-cadastro a {
+    font-weight: bold;
+    background: #f7f8f1;
+    padding: 6px;
+    color: rgb(29, 162, 193);
+    margin-left: 10px;
+    border: 1px solid rgb(107, 101, 101);
+   
+    border-radius: 4px;
+    border-radius: 4px;  
+   
+    transition: all 0.4s linear;
+    transition: all 0.4s  linear;
+  }
+   
+.btn-cadastro a:hover {
+    color: #39bfd7;
+    background: #f7f7f7;
+    border: 1px solid #4ab3c6;
+  }
+   
+a{
+    text-decoration: none;
+  } 
+  

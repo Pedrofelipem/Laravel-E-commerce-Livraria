@@ -1,0 +1,178 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+  background-color: aliceblue;
+  font-family: 'Rubik', sans-serif;
+}
+/* cabeçalho principal*/
+header{
+  background-color: cadetblue;
+  max-width: 100%;
+  height: 180px;
+}
+/* imagem mundail  */
+#img-mundial{
+  height: 100px;
+  margin-top: 2.5%;
+  margin-left: 50px;
+}
+/* conteiner dos input */
+.buscador{
+  text-align: center;
+  margin-top: -70px;
+}
+/* Input de Pesquisa */
+input{
+  padding: 10px;
+  width: 450px;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+/* botão ok */
+#btn-busca{
+  width: 40px;
+  background-color: yellow;
+  font-weight: bold;
+}
+#btn-busca:hover{
+  background-color: white;
+}
+/* Icone do menu categoria */
+.menu-img{
+  float: left;
+}
+
+/* Colocar login e cadastro para o lado direito da tela */
+.login-cadastro{
+  float: right;
+  margin-top: -35px;
+}
+/* login e cadastro */
+#login_c{
+  padding: 2px;
+  color: aliceblue;
+  margin-right: 100px;
+  font-family: 'Rubik', sans-serif;
+}
+#login_c:hover{
+  text-decoration: underline;
+}
+
+/* cor e espaçamento do menu destaque */
+.conteiner-menu{
+  background-color: rgb(48, 48, 48);
+  padding: 12px;
+}
+
+#img-menu{
+  width: 20px;
+}
+
+/* Menu de destaques*/
+.menu{
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Imagem do carrousel - tamnho e comprimento */
+.item{
+  height: 250px;
+  width: 100%;
+}
+
+/* Rolar a imagem no carousel */
+.owl-carousel {
+  text-align: center;
+}
+/* Lista */
+#menu{
+  display: inline;
+  padding: 19px;
+  color: aliceblue;
+  font-family: 'Rubik', sans-serif;
+  font-size: 17px;
+}
+#menu:hover{
+  color: yellow;
+}
+
+/* Princiapais categorais*/
+.p_categoria{
+  display: inline;
+  padding: 40px;
+  text-align: center;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  background-color: #ffffff;
+}
+.p_categoria:hover{
+  background-color: cadetblue;
+  
+}
+/* Centralizar as principais catgorias */
+.conteniner-cat{
+  text-align: center;
+  margin-top: 50px;
+}
+.cont-livro{
+  text-align: center;
+  margin-top: 70px;
+
+}
+.livro{
+  padding: 80px;
+  display: inline;
+  
+}
+footer{
+  margin-top: 200px;
+}
+.rodape1{
+  
+  background-color: rgba(135, 206, 255, 0.2);
+  text-align: center;
+  padding: 20px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: bolder;
+  
+}
+.conteudo{
+  display: inline;
+  padding: 60px;
+  
+}
+.rodape2{
+  background-color: rgba(72,209,204, 0.3);
+  padding: 60px;
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: 'Rubik', sans-serif;
+}
+
+/* Titulo principais catgorias */
+h3{
+  font-family: 'Nanum Gothic', sans-serif;
+  padding: 5px;
+}
+#h5-felipe{
+  color: blue;
+}
+#h5-felipe:hover{
+  text-decoration: underline;
+
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+
