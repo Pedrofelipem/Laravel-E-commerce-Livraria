@@ -48,7 +48,9 @@ input{
 /* Colocar login e cadastro para o lado direito da tela */
 .login-cadastro{
   float: right;
-  margin-top: -35px;
+  margin-top: -45px;
+  position: relative;
+  right: 25px;
 }
 /* login e cadastro */
 #login_c{
@@ -65,6 +67,10 @@ input{
 .conteiner-menu{
   background-color: rgb(48, 48, 48);
   padding: 12px;
+}
+
+#session-nome{
+  color: rgb(48, 48, 48);
 }
 
 #img-menu{

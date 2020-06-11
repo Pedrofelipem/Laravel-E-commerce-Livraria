@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="{{url('assets/js/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css')}}">
     <link rel="stylesheet" type="text/css" href="{{url('assets/js/OwlCarousel2-2.3.4/dist/assets/wol.theme.default.min.css')}}">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Rubik&display=swap" rel="stylesheet">
-    <link rel="icon" type="imagem/jpg" href="{{('assets/imagens/icone.jpg')}}">
+    <link rel="icon" type="imagem/jpg" href="{{url('assets/imagens/icone.jpg')}}">
     <title>Mundial Livraria</title>
 </head>
 <body>
@@ -24,8 +24,12 @@
             <ul>
                 <a href="{{route('login')}}"><li id="login_c">LOGIN</li></a>
                 <a href="{{route('cadastro')}}"><li id="login_c">CRIAR CONTA</li></a>
+                <a href="{{route('logout')}}"><li id="login_c">LOGOUT</li></a>
+                </br>
+                <h3 id="nome-user">Bem vindo<i id="session-nome">, {{session('nome')}}</i></h3>
             </ul>
         </div>
+            
     </header>
         <div class="conteiner-menu">
             <nav class="menu-img">

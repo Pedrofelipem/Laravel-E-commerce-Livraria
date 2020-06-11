@@ -24,6 +24,17 @@
   top: 60px;
   margin: auto;
 }
+.alerta2{
+  padding: 30px;
+  border-radius: 5px;
+	color: rgba(11, 146, 17, 0.849);	
+	background-color:#87CEFA;
+  position: relative;
+  font-size: 20px;
+  width: 460px;
+  top: 60px;
+  margin: auto;
+}
 a{
   font-family: Arial, sans-serif;
   text-decoration: none;

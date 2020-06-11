@@ -8,17 +8,20 @@
     <title>Login Livraria</title>
 </head>
 <body>
-    <!--Formulário Login-->
+    
+    <!-- Erro de login-->
     @if(session('alerta'))
-    <div class="alerta">
-        <b>Oh não!</b> {{session('alerta')}}
-    </div>
-    @endif
-    @if(session('mensagem'))
-        <div class="alerta"
-        <h2>{{session('mensagem')}}</h2>
+        <div class="alerta">
+            <b>Oh não!</b> {{session('alerta')}}
         </div>
     @endif
+    <!--Sucesso cadastro-->
+    @if(session('mensagem'))
+        <div class="alerta2"
+            <h2>{{session('mensagem')}}</h2>
+        </div>
+    @endif
+    <!--Formulário Login-->
     <div class="Conteiner">      
         <section >
             <form action="{{('home')}}" method="post" > 

@@ -11,10 +11,17 @@ class LoginController extends Controller
     }
     
     public function logar(Request $r){
-        if($r->email_login == 'cesmac@edu.com.br' && $r->senha_login == '12345'){
+        if($r->email_login == 'felipe@gmail.com' && $r->senha_login == '123456'){
+            session(['nome' => 'Pedro Felipe']);
             return redirect()->route('home');
         }else{
             return redirect()->back()->with('alerta', 'Login ou senha invalidos.');
         }       
     }
+
+    public function logout(Request $r){
+        $r->session()->flush();
+        return redirect ('login');
+    }
 }
+

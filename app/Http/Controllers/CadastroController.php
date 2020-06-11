@@ -9,14 +9,15 @@ class CadastroController extends Controller
     public function cadastro(){
         return view('cadastro');
     }
+    
     public function salvarusuario(Request $r){
         $r->validate([
             'nome' => 'required',
             'email' => 'required',
             'numero' => 'required|integer',
-            'cpf' => 'required|integer',
+            'cpf' => 'required',
             'cep' => 'required|integer',
-            'senha' => 'required|integer'
+            'senha' => 'required|string'
         ]);
         return redirect()->route('login')->with('mensagem', 'Usuário cadastrado com sucesso!');
     }
