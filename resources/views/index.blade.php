@@ -20,16 +20,20 @@
                 <input id="btn-busca" type="submit" value="Ok">
             </form>
         </div>
+        @if(session('nome') == null)
         <div class="login-cadastro">
             <ul>
                 <a href="{{route('login')}}"><li id="login_c">LOGIN</li></a>
                 <a href="{{route('cadastro')}}"><li id="login_c">CRIAR CONTA</li></a>
-                <a href="{{route('logout')}}"><li id="login_c">LOGOUT</li></a>
-                </br>
-                <h3 id="nome-user">Bem vindo<i id="session-nome">, {{session('nome')}}</i></h3>
             </ul>
         </div>
-            
+        @else
+        <div class="login-cadastro">
+            <a href="{{route('logout')}}"><li id="login_c">LOGOUT</li></a>
+            </br>
+            <h3 id="nome-user">Bem vindo<i id="session-nome">, {{session('nome')}}</i></h3>
+        </div>
+        @endif      
     </header>
         <div class="conteiner-menu">
             <nav class="menu-img">
@@ -45,7 +49,6 @@
                 </ul>
             </nav>
         </div>
-
     <div class="owl-carousel owl-theme">
         <a href="{{route('livros.catan')}}"><img class ="item" src="{{url('assets/imagens/img1.jpg')}}" alt="img1"></a>
         <a href="{{route('livros.a-arte')}}"><img class ="item" src="{{url('assets/imagens/img2.jpg')}}" alt="img2"></a>
@@ -54,7 +57,6 @@
         <a href=""><img class ="item" src="{{url('assets/imagens/img5.jpg')}}" alt="img5"></a>
         <a href="{{route('livros.mestres')}}"><img class ="item" src="{{url('assets/imagens/img6.jpg')}}" alt="img6"></a>
     </div>
-
     <div>
         <br/>
         <br/>
@@ -72,8 +74,7 @@
     <br/>
     <br/>
     <br/>
-    <br/>
-        
+    <br/>    
     <div class="cont-livro">
         <a href="{{route('livros.mestres')}}"><li class="livro"><img src="{{url('assets/imagens/img-capita.jpg')}}" alt="" width="150"></li></a>
         <a href="#"><li class="livro"><img src="{{url('assets/imagens/img-keynes.jpg')}}" alt="" width="150"> </li></a>
@@ -103,11 +104,25 @@
         </div>
         <div class="rodape2">
             <h3>©Todos os direitos reservados</h3>
-            <h5>Desvolvido por <a id="h5-felipe"href="{{url('https://www.facebook.com/Pedro.felipe.m1')}}" target="_blank">Pedro Felipe</a></h5>
+            <h5>Desvolvido por <a id="h5-felipe" href="{{url('https://www.facebook.com/Pedro.felipe.m1')}}" target="_blank">Pedro Felipe</a></h5>
         </div>
     </footer>
         <script src="{{url('assets/js/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js')}}" type="text/javascript"></script>
         <script src="{{url('assets/js/OwlCarousel2-2.3.4/dist/owl.carousel.js')}}" type="text/javascript"></script>
         <script src="{{url('assets/js/jquery.js')}}" type="text/javascript"></script>
+
+        <!--chetbot IA -->
+        <script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
+        <script>
+            (function () {
+                window.onload = function () {
+                    new BlipChat()
+                    .withAppKey('Y2hhdGJvdGVjb21tZXJjZWxpdnJhcmlhOjEzYTFlNGNjLTg2YjAtNDgzOC05YzAyLTFhZmU4OTZiMDQ0Ng==')
+                    .withButton({"color":"#2CC3D5","icon":""})
+                    .withCustomCommonUrl('https://chat.blip.ai/')
+                    .build();
+                 }
+            })();
+        </script>             
 </body>
 </html>

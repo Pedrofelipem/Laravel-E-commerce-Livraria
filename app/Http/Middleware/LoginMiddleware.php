@@ -13,10 +13,8 @@ class LoginMiddleware
      * @param  \Closure  $next
      * @return mixed
      */
-    public function handle($request, Closure $next){
-        if(!session('nome')){
-            return redirect('login')->with('alerta', 'Sessão expirada.');
-        }
+    public function handle($request, Closure $next)
+    {
         return $next($request);
     }
 }
