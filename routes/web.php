@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Usuario;
+
 
 
 Route::get('/login', 'LoginController@login')->name('login');
@@ -19,3 +21,5 @@ Route::group(['prefix' => '/livros'], function() {
     Route::get('/homem-de-ferro','LivrosController@homemdeferro')->name('livros.homem-de-ferro');
     Route::get('/catan','LivrosController@catan')->name('livros.catan');
 });
+
+

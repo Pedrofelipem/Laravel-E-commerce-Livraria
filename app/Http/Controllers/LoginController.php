@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Usuario;
 
 class LoginController extends Controller
 {
@@ -11,12 +12,19 @@ class LoginController extends Controller
     }
     
     public function logar(Request $r){
-        if($r->email_login == 'felipe@gmail.com' && $r->senha_login == '123456'){
-            session(['nome' => 'Pedro Felipe']);
-            return redirect()->route('home');
+        $r->validate([
+            'email_login' => 'required|max:20|email',
+            'senha_login' => 'required|max:20'   
+        ]);
+
+        $usuario = Usuario::where('email', $r->email_login)->where('senha', $r->senha_login)->first();
+        
+        if($usuario != null){
+            session(['nome'=> $usuario->nome]);
+            return redirect()->route('home'); 
         }else{
             return redirect()->back()->with('alerta', 'Login ou senha invalidos.');
-        }       
+        }      
     }
 
     public function logout(Request $r){
